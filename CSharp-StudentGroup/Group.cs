@@ -59,7 +59,7 @@ namespace StudentGroup
             for (int i = 0; i < this.size; i++)
             {
                 arr[i] = new Student();
-                arr[i] = other.arr[i];
+                arr[i].DeepCopy(other.arr[i]);
             }
         }
         public Student this[int index]
